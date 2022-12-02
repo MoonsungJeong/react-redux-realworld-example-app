@@ -9,16 +9,22 @@ import Settings from "./Settings/Settings";
 import Editor from "./Editor/Editor";
 import Article from "./Article/Article";
 
-import { Routes, HashRouter, Route, Link } from "react-router-dom";
+import { Routes, Navigate, Route, Link } from "react-router-dom";
 
 function App() {
+  window.location.hash = "#/";
   return (
     <div className="App">
-      <Header></Header>
+      <Header />
+      <Link to="/">home</Link>
+      <Link to="/Signup">signup</Link>
+      <Link to="/Settings">settings</Link>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Signup" element={<Signup />} />
+        <Route path="/Settings" element={<Settings />} />
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
