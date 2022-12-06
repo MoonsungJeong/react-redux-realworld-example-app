@@ -13,24 +13,24 @@ function Header() {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link to="/editor" className="nav-link">
               <i className="ion-compose"></i>&nbsp;New Article
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link to="/settings" className="nav-link">
               <i className="ion-gear-a"></i>&nbsp;Settings
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link to="/login" className="nav-link">
               Sign in
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">
+            <Link to="/register" className="nav-link">
               Sign up
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

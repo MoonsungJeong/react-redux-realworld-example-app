@@ -21,8 +21,10 @@ function App() {
       <Link to="/Settings">settings</Link>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/Settings" element={<Settings />} />
+        <Route path="/login" element={<Signin />} />
+        <Route path="/register" element={<Signup />} />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/editor" element={<Editor />} />
       </Routes>
       <Footer />
     </div>
